@@ -1,7 +1,7 @@
 .DS_Store
-.vite/
 node_modules/
 dist/
+*.tsbuildinfo
 .vercel/
 .env
 .env.*

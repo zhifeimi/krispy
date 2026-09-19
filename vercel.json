@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "deno cache --frozen-lockfile deno.json",
-  "buildCommand": "deno task build",
+  "installCommand": "pnpm install",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
