@@ -1,6 +1,6 @@
-# KRISP
+# KRISPY
 
-Vietnamese street cuisine — restaurant website. React + TypeScript + Vite + Tailwind CSS + shadcn/ui, running on **Node.js** with pnpm.
+Website for Krispy, a **fictional** bakery — a design demo, not a real business. The address and phone number are placeholders, and the map pin points at a public park. Photos are CC0 (rawpixel, StockSnap). React + TypeScript + Vite + Tailwind CSS + shadcn/ui, running on **Node.js** with pnpm.
 
 ## Requirements
 

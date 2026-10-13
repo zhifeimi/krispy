@@ -1,12 +1,12 @@
 import { useRevealRoot } from '@/hooks/useReveal.ts'
 
 const STATEMENT =
-  'Flavours and textures done right — crackling pork belly, crusty banh mi, slow-simmered pho and herbs by the handful. Made fresh daily, served fast, eaten with your hands.'
+  'Crust and crumb done right — shatter-crisp croissants, crackling sourdough, proper pies and butter by the block. Baked fresh daily, sold warm, eaten on the walk home.'
 
 const STATS = [
-  { k: '2', v: 'stores — Dapto & Wollongong', color: '#d93a1e' },
-  { k: '9k+', v: 'Facebook followers & counting', color: '#ef9d1a' },
-  { k: '100%', v: 'made fresh in-house daily', color: '#5a7d2a' },
+  { k: '4am', v: 'ovens on, every baking day', color: '#d93a1e' },
+  { k: '36h', v: 'slow sourdough ferment', color: '#ef9d1a' },
+  { k: '100%', v: 'baked fresh in-house daily', color: '#5a7d2a' },
 ]
 
 export default function Manifesto() {

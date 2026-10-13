@@ -1,7 +1,7 @@
 import { MENU } from '@/data/menu.ts'
 import { useRevealRoot } from '@/hooks/useReveal.ts'
-import banhmiChicken from '@/assets/banhmi_chicken.jpg'
-import banhXeo from '@/assets/banh_xeo.jpg'
+import croissantsJam from '@/assets/croissants-jam.jpg'
+import sourdough from '@/assets/sourdough.jpg'
 
 function CategoryBlock({
   cat,
@@ -22,7 +22,7 @@ function CategoryBlock({
               {cat.title}
             </h3>
             <span className="mt-1.5 block font-display text-lg font-medium uppercase text-[#5a7d2a]">
-              {cat.vietnamese}
+              {cat.subtitle}
             </span>
           </div>
           <span className="mt-1 hidden h-2.5 w-2.5 shrink-0 rotate-45 bg-[#5a7d2a] outline outline-1 outline-[#141313] sm:block" />
@@ -74,7 +74,7 @@ function ImageCell({ src, alt, caption }: { src: string; alt: string; caption: s
 
 export default function MenuSection() {
   const ref = useRevealRoot<HTMLElement>()
-  const [banhmi, pho, vermicelli, rice, poke, bao, rpr, sides] = MENU
+  const [pastries, bread, sandwiches, pies, cakes, cookies, scones, drinks] = MENU
 
   return (
     <section id="menu" ref={ref} className="relative bg-[#f8ebda] grain">
@@ -94,16 +94,14 @@ export default function MenuSection() {
           </div>
           <div className="reveal flex flex-col items-start gap-3 md:items-end">
             <p className="font-mono-k max-w-xs text-xs leading-relaxed tracking-wide">
-              Pickup prices from our Bopple stores. Gluten-free range available across banh mi,
-              pho, rice plates &amp; salad bowls.
+              Counter prices. Gluten-friendly and vegan bakes rotate daily — ask at the counter
+              before they sell out.
             </p>
             <a
-              href="https://bopple.app/krisp/menu"
-              target="_blank"
-              rel="noreferrer"
+              href="#locations"
               className="border-[1.5px] border-[#141313] px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#141313] hover:text-[#ef9d1a]"
             >
-              Order Pickup →
+              Visit Us →
             </a>
           </div>
         </div>
@@ -123,24 +121,24 @@ export default function MenuSection() {
 
         {/* grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <CategoryBlock cat={banhmi} />
+          <CategoryBlock cat={pastries} />
           <ImageCell
-            src={banhmiChicken}
-            alt="Krispy chicken banh mi with pickled carrot, cucumber, coriander and chilli"
-            caption="Krispy Chicken Banh Mi"
+            src={croissantsJam}
+            alt="Bowl of butter croissants with jam, marmalade and black coffee"
+            caption="The Krispy Croissant"
           />
-          <CategoryBlock cat={pho} />
-          <CategoryBlock cat={vermicelli} />
+          <CategoryBlock cat={bread} />
+          <CategoryBlock cat={sandwiches} />
           <ImageCell
-            src={banhXeo}
-            alt="Crispy Vietnamese pancake with beef, lettuce, cucumber and nuoc cham"
-            caption="Fresh off the pass"
+            src={sourdough}
+            alt="Two sourdough loaves on a wooden board, one cut open to show the crumb"
+            caption="36-hour sourdough"
           />
-          <CategoryBlock cat={rice} />
-          <CategoryBlock cat={poke} />
-          <CategoryBlock cat={bao} />
-          <CategoryBlock cat={rpr} />
-          <CategoryBlock cat={sides} />
+          <CategoryBlock cat={pies} />
+          <CategoryBlock cat={cakes} />
+          <CategoryBlock cat={cookies} />
+          <CategoryBlock cat={scones} />
+          <CategoryBlock cat={drinks} />
         </div>
 
         {/* midweek deal strip */}
@@ -151,16 +149,14 @@ export default function MenuSection() {
             </span>
             <span className="hidden h-6 w-[1.5px] bg-[#141313] sm:block" />
             <p className="font-mono-k text-xs uppercase tracking-widest">
-              Banh mi favourites · 4:30pm — 7:30pm
+              Coffee + croissant $10 · Tue — Thu
             </p>
           </div>
           <a
-            href="https://bopple.app/krisp/menu"
-            target="_blank"
-            rel="noreferrer"
+            href="#locations"
             className="border-[1.5px] border-[#141313] bg-[#141313] px-5 py-2.5 font-display text-sm font-semibold uppercase tracking-[0.15em] text-[#ef9d1a] transition-colors duration-300 hover:bg-transparent hover:text-[#141313]"
           >
-            Get the deal
+            Find us
           </a>
         </div>
       </div>

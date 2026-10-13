@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 580">
+  <rect width="580" height="580" fill="#ef9d1a" />
+  <text
+    x="290"
+    y="318"
+    text-anchor="middle"
+    font-family="'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="118"
+    letter-spacing="6"
+    fill="#fff"
+    stroke="#141313"
+    stroke-width="9"
+    paint-order="stroke"
+  >KRISPY</text>
+  <text
+    x="290"
+    y="378"
+    text-anchor="middle"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="30"
+    letter-spacing="7"
+    fill="#141313"
+  >CRUST &amp; CRUMB</text>
+</svg>

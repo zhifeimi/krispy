@@ -31,10 +31,10 @@ export default function Header() {
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3 md:px-10">
           <a href="#top" className="flex items-center gap-3">
             <span className="font-display text-2xl font-bold uppercase tracking-tight md:text-3xl">
-              Krisp
+              Krispy
             </span>
             <span className="font-mono-k hidden text-[10px] uppercase tracking-widest opacity-70 sm:block">
-              Flavours 'N Textures
+              Crust &amp; Crumb
             </span>
           </a>
 
@@ -49,12 +49,10 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://bopple.app/krisp/menu"
-              target="_blank"
-              rel="noreferrer"
+              href="#locations"
               className="inline-flex items-center whitespace-nowrap border-[1.5px] border-[#141313] bg-[#141313] px-5 py-2.5 font-display text-sm font-semibold uppercase leading-none tracking-[0.12em] text-[#ef9d1a] transition-colors duration-300 hover:bg-transparent hover:text-[#141313]"
             >
-              Order Pickup
+              Visit Us
             </a>
           </nav>
 
@@ -76,7 +74,7 @@ export default function Header() {
         }`}
       >
         <div className="flex items-center justify-between px-5 py-3">
-          <span className="font-display text-2xl font-bold uppercase">Krisp</span>
+          <span className="font-display text-2xl font-bold uppercase">Krispy</span>
           <button
             className="flex h-10 w-10 items-center justify-center border-[1.5px] border-[#141313]"
             onClick={() => setOpen(false)}
@@ -98,16 +96,15 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="https://bopple.app/krisp/menu"
-            target="_blank"
-            rel="noreferrer"
+            href="#locations"
+            onClick={() => setOpen(false)}
             className="mt-8 inline-block w-max border-2 border-[#141313] bg-[#141313] px-8 py-4 font-display text-lg font-semibold uppercase tracking-[0.15em] text-[#ef9d1a]"
           >
-            Order Pickup
+            Visit Us
           </a>
         </nav>
         <p className="px-6 pb-8 font-mono-k text-xs uppercase tracking-widest">
-          Dapto · Wollongong NSW
+          A fictional bakery · Demo site
         </p>
       </div>
     </>

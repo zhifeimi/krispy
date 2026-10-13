@@ -1,5 +1,5 @@
 import { useRevealRoot } from '@/hooks/useReveal.ts'
-import andy from '@/assets/andy.jpg'
+import bakerOven from '@/assets/baker-oven.jpg'
 
 export default function Story() {
   const ref = useRevealRoot<HTMLElement>()
@@ -10,13 +10,13 @@ export default function Story() {
         <div className="reveal relative md:col-span-6">
           <div className="dish-cell overflow-hidden border-[1.5px] border-[#141313] shadow-[10px_10px_0_#ef9d1a]">
             <img
-              src={andy}
-              alt="Andy Nguyen at KRISP Dapto holding a banh mi and a vermicelli bowl"
+              src={bakerOven}
+              alt="Baker loading golden loaves into a deck oven"
               className="dish-img w-full object-cover"
             />
           </div>
           <p className="mt-4 font-mono-k text-[10px] uppercase tracking-[0.25em] text-[#141313]/60">
-            Andy Nguyen — KRISP Dapto · photo: Illawarra Mercury
+            First bake of the day · stock photo
           </p>
         </div>
 
@@ -26,23 +26,23 @@ export default function Story() {
             ( Our story )
           </p>
           <h2 className="reveal mt-4 font-display text-4xl font-bold uppercase leading-[0.95] tracking-tight md:text-6xl">
-            From a van
+            From a starter
             <br />
-            to <span className="text-[#d93a1e]">two stores</span>
+            to <span className="text-[#d93a1e]">a storefront</span>
           </h2>
           <div className="reveal mt-6 space-y-4 text-base leading-relaxed text-[#141313]/80 md:text-lg">
             <p>
-              Andy Nguyen made his name serving banh mi from Bun Me Van before trading four wheels
-              for a permanent home on Prince Edward Drive, Dapto — and KRISP was born.
+              Krispy began with a jar of sourdough starter and a borrowed oven. One loaf turned into
+              a market stall, and the stall turned into a bakery on Crumb Lane.
             </p>
             <p>
-              The idea stayed the same: Vietnamese street cuisine done properly. Crackling pork
-              belly, rolls baked crusty, broth that takes all day, herbs by the handful — flavours
-              and textures done right.
+              The idea never changed: bake it dark, bake it daily. Croissants laminated over three
+              days, sourdough that takes its time, pies with proper pastry — crust and crumb done
+              right.
             </p>
             <p>
-              Dapto fell for it first. Now the second store on Globe Lane, Wollongong brings the
-              same energy to the city — same menu, same crunch, same Krisp twist.
+              Full disclosure: Krispy is a fictional bakery. The lane isn't real and neither are the
+              croissants — this site is a design demo.
             </p>
           </div>
           <div className="reveal mt-8 flex flex-wrap gap-3">
@@ -53,12 +53,10 @@ export default function Story() {
               Visit us
             </a>
             <a
-              href="https://www.facebook.com/people/KRISP/100026420867278/"
-              target="_blank"
-              rel="noreferrer"
+              href="#menu"
               className="border-[1.5px] border-[#141313] px-6 py-3 font-display text-sm font-semibold uppercase tracking-[0.15em] transition-colors duration-300 hover:bg-[#141313] hover:text-[#ef9d1a]"
             >
-              Facebook ↗
+              See the menu
             </a>
           </div>
         </div>
