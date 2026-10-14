@@ -1,4 +1,5 @@
 import heroSpread from '@/assets/hero-croissants.webp'
+import heroSpread768 from '@/assets/hero-croissants-768.webp'
 import logo from '@/assets/logo.svg'
 
 const LETTERS = ['K', 'R', 'I', 'S', 'P', 'Y']
@@ -81,8 +82,12 @@ export default function Hero() {
 
       {/* food spread */}
       <div className="relative mt-auto border-t-[1.5px] border-[#141313]">
+        {/* srcset/sizes must match the preload in index.html, or the hero downloads twice.
+            ponytail: 100vw ignores the object-cover crop (~20% wider on tall phones); fine for a photo */}
         <img
           src={heroSpread}
+          srcSet={`${heroSpread768} 768w, ${heroSpread} 1024w`}
+          sizes="100vw"
           alt="A basket piled with freshly baked butter croissants"
           fetchPriority="high"
           className="h-[34vh] w-full object-cover object-center md:h-[38vh]"

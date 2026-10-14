@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="KRISPY — a fictional bakery. Croissants, sourdough, pies & cakes that don't exist. Demo site, not a real business." />
     <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
-    <link rel="preload" as="image" href="/src/assets/hero-croissants.webp" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-croissants.webp"
+      imagesrcset="/src/assets/hero-croissants-768.webp 768w, /src/assets/hero-croissants.webp 1024w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
     <title>KRISPY — Crust & Crumb | A Fictional Bakery</title>
   </head>
   <body>
