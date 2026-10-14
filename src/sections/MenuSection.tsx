@@ -1,7 +1,7 @@
 import { MENU } from '@/data/menu.ts'
 import { useRevealRoot } from '@/hooks/useReveal.ts'
-import croissantsJam from '@/assets/croissants-jam.jpg'
-import sourdough from '@/assets/sourdough.jpg'
+import croissantsJam from '@/assets/croissants-jam.webp'
+import sourdough from '@/assets/sourdough.webp'
 
 function CategoryBlock({
   cat,
@@ -64,7 +64,12 @@ function CategoryBlock({
 function ImageCell({ src, alt, caption }: { src: string; alt: string; caption: string }) {
   return (
     <figure className="dish-cell reveal relative overflow-hidden border-[1.5px] border-[#141313]">
-      <img src={src} alt={alt} className="dish-img h-full min-h-[320px] w-full object-cover" />
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="dish-img h-full min-h-[320px] w-full object-cover"
+      />
       <figcaption className="absolute bottom-0 left-0 bg-[#141313] px-3 py-1.5 font-mono-k text-[10px] uppercase tracking-[0.25em] text-[#ef9d1a]">
         {caption}
       </figcaption>

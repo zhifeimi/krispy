@@ -1,6 +1,6 @@
 # KRISPY
 
-Website for Krispy, a **fictional** bakery — a design demo, not a real business. The address and phone number are placeholders, and the map pin points at a public park. Photos are CC0 (rawpixel, StockSnap). React + TypeScript + Vite + Tailwind CSS + shadcn/ui, running on **Node.js** with pnpm.
+Website for Krispy, a **fictional** bakery — a design demo, not a real business. The address and phone number are placeholders, and the map pin points at a public park. Photos are CC0 (rawpixel, StockSnap). React + TypeScript + Vite + Tailwind CSS, running on **Node.js** with pnpm.
 
 ## Requirements
 
@@ -23,9 +23,8 @@ First run installs dependencies into `node_modules/`.
 ```
 src/sections/        Page sections
 src/hooks/           Custom hooks
-src/components/ui/   shadcn/ui components
+src/pages/Home.tsx   The page (rendered directly by main.tsx)
 src/App.css          Styles specific to the Webapp
-src/App.tsx          Root React component
 src/index.css        Global styles
 src/main.tsx         Entry point for rendering the Webapp
 index.html           Entry point for the Webapp

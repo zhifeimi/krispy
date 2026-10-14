@@ -1,10 +1,10 @@
 import { useRevealRoot } from '@/hooks/useReveal.ts'
-import ryeLoaves from '@/assets/rye-loaves.jpg'
-import seededRolls from '@/assets/seeded-rolls.jpg'
-import cinnamonScrolls from '@/assets/cinnamon-scrolls.jpg'
-import cookies from '@/assets/cookies.jpg'
-import chocolateCake from '@/assets/chocolate-cake.jpg'
-import croissantCoffee from '@/assets/croissant-coffee.jpg'
+import ryeLoaves from '@/assets/rye-loaves.webp'
+import seededRolls from '@/assets/seeded-rolls.webp'
+import cinnamonScrolls from '@/assets/cinnamon-scrolls.webp'
+import cookies from '@/assets/cookies.webp'
+import chocolateCake from '@/assets/chocolate-cake.webp'
+import croissantCoffee from '@/assets/croissant-coffee.webp'
 
 const SHOTS = [
   { src: ryeLoaves, alt: 'Dark rye loaves cooling on wooden racks', cap: 'Dark rye' },

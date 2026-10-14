@@ -1,4 +1,4 @@
-import heroSpread from '@/assets/hero-croissants.jpg'
+import heroSpread from '@/assets/hero-croissants.webp'
 import logo from '@/assets/logo.svg'
 
 const LETTERS = ['K', 'R', 'I', 'S', 'P', 'Y']
@@ -84,6 +84,7 @@ export default function Hero() {
         <img
           src={heroSpread}
           alt="A basket piled with freshly baked butter croissants"
+          fetchPriority="high"
           className="h-[34vh] w-full object-cover object-center md:h-[38vh]"
         />
         <img

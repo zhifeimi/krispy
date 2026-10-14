@@ -1,5 +1,5 @@
 import { useRevealRoot } from '@/hooks/useReveal.ts'
-import bakerOven from '@/assets/baker-oven.jpg'
+import bakerOven from '@/assets/baker-oven.webp'
 
 export default function Story() {
   const ref = useRevealRoot<HTMLElement>()
@@ -12,6 +12,9 @@ export default function Story() {
             <img
               src={bakerOven}
               alt="Baker loading golden loaves into a deck oven"
+              loading="lazy"
+              width={1024}
+              height={681}
               className="dish-img w-full object-cover"
             />
           </div>
